@@ -3,7 +3,7 @@ export default {
         {
             id: '1',
             nombre: 'Tennis Converse Standard.',
-            descripcion: 'Autenticos marca converse',
+            descripcion: 'Autenticos marca converse negros',
             precio:500.0,
             colores: ['negro', 'rojo', 'amarillo'],
             tamaños: ['1,5','2','2.5','5','5.5']

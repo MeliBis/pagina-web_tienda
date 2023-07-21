@@ -14,9 +14,13 @@ thumbs.addEventListener('click', (e) =>{
     if(e.target.tagName === 'IMG'){
         const imagenSrc = e.target.src;
 
+        //obtener l posicion del ultimo
         const lastIndex= imagenSrc.lastIndexOf('/')
+
+        //cortamols la cadena de texto para obtener solamente una parte
         const nombreImagen= imagenSrc.substring(lastIndex +1);
 
+        //cambiamos la ruta de la imagen del producto
         productoImagen.src = `./img/tennis/${nombreImagen}`
     }
 })
@@ -32,6 +36,7 @@ propiedadColor.addEventListener('click', (e)=> {
 btnIncrementarCantidad.addEventListener('click', (e)=>{
     inputCantidad.value = parseInt(inputCantidad.value )+1;
 })
+
 btnDisminuirCantidad.addEventListener('click', (e)=>{
     if(parseInt(inputCantidad.value) >1){
         inputCantidad.value = parseInt(inputCantidad.value ) -1;
